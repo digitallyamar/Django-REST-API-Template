@@ -28,9 +28,9 @@ Here are the steps to follow to get your Django REST API server up and running:
             1. When you create a new app, add an entry for it's config info in the INSTALLED_APPS array of the settings.py file.
             2. You will also need to define your own app model (Database model) in the app's models.py file.
             3. You will then need to create a migration file for your new app model using the command:
-                python manage.py makemigrations <YOUR DJANGO APP NAME>
+                python3 manage.py makemigrations <YOUR DJANGO APP NAME>
             4. Finally, apply the migrations using the command:
-                python manage.py migrate
+                python3 manage.py migrate
     
     Step 6: Create a serializer file to convert your database's model data to a readable serialized data that can be displayed to the end user. Refer to todo/serializers.py file for an example implementation.
     
@@ -41,7 +41,7 @@ Here are the steps to follow to get your Django REST API server up and running:
     Step 9: Finally add Django's rest framework app module to our project by including them in our INSTALLED_APPS array of the settings.py file.
 
     Step 10: All the required configurations should now be done. So all you need to do now is to run our Django REST API server using the command:
-            python manage.py runserver
+            python3 manage.py runserver
 
         You should now have your server up and running. You can visit the following url to access serialized Model data of your Todo app at the url:
             http://127.0.0.1:8000/api/todo/
