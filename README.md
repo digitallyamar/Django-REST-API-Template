@@ -36,7 +36,7 @@ Here are the steps to follow to get your Django REST API server up and running:
     
     Step 7: Next, we decide what data to show to the users using the app's views.py file. So create and update <YOUR DJANGO APP NAME>/views.py file. Refer to our todo/views.py file for an example implementation.
 
-    Step 8: Next, we will create an urls.py file to map a iew to it's respective URL. You can refer to our todo/urls.py file for an example implementation. This file needs to be called from the project level urls.py file using the 'include' attribute. Refer to django_rest_api/urls.py file to find an example of how it is including our todo/urls.py file.
+    Step 8: Next, we will create an urls.py file to map a view to it's respective URL. You can refer to our todo/urls.py file for an example implementation. This file needs to be called from the project level urls.py file using the 'include' attribute. Refer to django_rest_api/urls.py file to find an example of how it is including our todo/urls.py file.
 
     Step 9: Finally add Django's rest framework app module to our project by including them in our INSTALLED_APPS array of the settings.py file.
 
